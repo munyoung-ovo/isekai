@@ -1,0 +1,64 @@
+# Isekai · 世界骨架模板
+# 适用场景：AI无法识别你的IP时，手动填写你了解的内容
+#
+# ⚠️ 填写红线：
+# 1. 只能用空格缩进，严禁Tab键
+# 2. 内容含冒号(:)或引号时，整段必须用双引号包裹
+# 3. 不确定怎么填的字段直接写 auto，系统启动时自动补全
+# 4. 填完后将此文件复制到 worlds/{世界名称}/ 目录下
+#    并重命名为 ip_template.yaml，然后重新启动
+
+ip_name: ""           # 世界/IP名称
+ip_type: auto         # novel/manga/anime，不确定写 auto
+
+timeline:
+  - node: ""          # 核心事件描述
+    type: major       # major=大节点 medium=中节点 minor=小节点
+    chapter: ""       # 发生在第几章/集，不确定写 auto
+    world_undertone: auto  # 此阶段世界情绪基调，不确定写 auto
+    npc_awareness:
+      auto: auto      # 格式：{角色名}: locked 或 unlocked
+
+characters:
+  - name: ""          # 角色名
+    core_tags:
+      - auto          # 性格标签，不确定写 auto
+    suspected_tags: []
+    core_obsession: auto   # 最在乎的东西
+    inner_tension: auto    # 内在矛盾，不确定写 auto
+    evolution_nodes:
+      - chapter: auto
+        shift: auto
+    signature_lines:
+      - ""            # 标志性台词，填原文
+      - ""
+      - ""
+    address_matrix:
+      对陌生人: auto
+      对同袍: auto
+      对长辈: auto
+      对对立者: auto
+      对至亲: auto
+      对玩家:
+        初见: auto
+        深化后: auto
+    cognitive_blind_spots:
+      - info: auto
+        unlocks_at: auto
+
+world_taboos:
+  physical_rules:
+    - auto            # 世界物理规则，不确定写 auto
+  social_rules:
+    - auto            # 社会潜规则
+  behavioral_taboos:
+    - auto            # 行为禁忌
+
+frequency_profile:
+  narrative_temperature: auto
+  rhythm_type: auto
+  perspective_strategy: auto
+  style_samples:
+    - ""              # 粘贴原著散文段落，越多越准
+  style_notes: auto
+  confidence: manual

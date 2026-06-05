@@ -1,0 +1,11 @@
+# 用户世界数据（不入库）
+worlds/*/
+ips/*/
+
+# 用户存档数据（不入库）
+saves/*
+!saves/.gitkeep
+
+# 当前会话状态
+saves/.current_session.yaml
+saves/.current_session.bak
