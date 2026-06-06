@@ -36,8 +36,25 @@
 
 需要先安装 Claude Code
 
+方式一
 ```
 npx skills add munyoung-ovo/isekai
+```
+
+方式二（git clone · 可自动更新）
+```
+git clone https://github.com/munyoung-ovo/isekai.git
+cd isekai && bash install.sh
+```
+
+更新
+```
+bash update.sh
+```
+
+卸载
+```
+bash uninstall.sh
 ```
 
 **怎么开始**
